@@ -1,0 +1,288 @@
+header{
+    background-color: rgb(5, 5, 137);
+   
+}
+
+header .logo-text span{
+    color: rgb(42, 42, 217);
+    font-family: Georgia, Times;
+}
+header ul li a:hover{
+    background: rgb(20, 20, 216);
+    transition: 0.5s;
+}
+
+
+.admin-wrapper{
+    display: flex;
+    height: calc(100% - 66px)
+}
+
+.admin-wrapper .left-sidebar{
+flex: 2;
+background: rgb(52, 52, 128);
+height: 100%;
+}
+.admin-wrapper .left-sidebar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: aliceblue;
+}
+
+.admin-wrapper .left-sidebar ul li a{
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid rgb(6, 6, 63);
+}
+
+.admin-wrapper .left-sidebar ul li a:hover{
+    background: rgb(5, 5, 79);
+}
+.admin-wrapper .admin-content{
+    flex: 8;
+    height: 100%;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+    
+}
+
+.admin-content .page-title{
+    text-align: center;
+    margin: 1.5rem 5.5rem 1.5rem 1.5rem;
+}
+
+table{
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgb(206, 205, 205);
+    font-family: monospace;
+}
+.edit {
+ color: green;   
+}
+.delete{
+    color: red;
+}
+.publish{
+    color: blue;
+}
+.edit:hover, 
+.delete:hover, 
+.publish:hover{
+    text-decoration: underline;
+}
+
+form div{
+    margin-bottom: 15px;
+}
+@media only screen and (min-width: 350px){
+    .admin-content{
+        width: 100%;
+    }
+    .admin-content .button-group{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .admin-wrapper{
+        width: 100%;
+    }
+    .admin-wrapper .admin-conten{
+        width: 100%;
+    }
+    form div{
+        width: 100%;
+    }
+    .admin-content .button-group a:last-child{
+        font-size: 17px;
+        margin-left: 20px;
+    }
+    .admin-content .button-group a:first-child{
+        font-size: 17px;
+        
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .admin-content{
+        width: 100%;
+    }
+    .admin-content .button-group{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .admin-wrapper{
+        width: 100%;
+    }
+    .admin-wrapper .admin-conten{
+        width: 100%;
+    }
+    form div{
+        width: 100%;
+    }
+    .admin-content .button-group a:last-child{
+        font-size: 17px;
+        margin-left: 20px;
+    }
+    .admin-content .button-group a:first-child{
+        font-size: 17px;
+        
+    }
+}
+@media only screen and (max-width: 750px){
+    th, td {
+        padding: 10px;
+    }
+    .admin-content .content{
+        width: 100%;
+    }
+   table{
+    width: 100%;
+    float: left;
+    font-size: 15px;
+    margin-right: 50px;
+    padding: 0px;
+
+    }
+    .page-title{
+        width: 100%;
+        margin-left: 0px;
+        justify-content: left;
+    }
+    .text-input{
+        width: 100%;
+    }
+  
+    table thead{
+        width: 100%;
+        padding: 0px;
+    }
+    table tbody{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .admin-wrapper{
+        width: 100%;
+    }
+    .admin-wrapper .admin-content{
+        width: 100%;
+       margin: 0px;
+       padding-left: 10px;
+    }
+    .text-input{
+        width: 100%;
+    }
+form div{
+    width: 100%;
+    margin-left: 20px;
+}
+.text-input{
+    width: 100%;
+}
+.admin-content .button-group{
+    width: 100%;
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-between;
+}
+.admin-content .button-group a:last-child{
+    font-size: 16px;
+    margin-left: 20px;
+}
+.admin-content .button-group a:first-child{
+    font-size: 17px;
+    
+}
+}
+
+@media only screen and (max-width: 500px){
+    th, td {
+        padding: 9px;
+    }
+    .admin-content .content{
+        width: 100%;
+        flex: 8;
+    }
+   table{
+    width: 90%;
+    font-size: 12px;
+    margin-right: 50px;
+    padding: 0px;
+
+    }
+    .left-sidebar{
+        width: 100%;
+        flex: 2;
+    }
+    .page-title{
+        width: 100%;
+        margin-left: 0px;
+        justify-content: left;
+    }
+    .text-input{
+        width: 100%;
+    }
+  
+    table thead{
+        width: 100%;
+        padding: 0px;
+    }
+    table tbody{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .admin-wrapper{
+        width: 100%;
+    }
+    .admin-wrapper .admin-content{
+        width: 100%;
+        flex: 8;
+        height: 100%;
+        padding: 40px 5px 100px;
+    }
+    .text-input{
+        width: 100%;
+    }
+form div{
+    width: 100%;
+    margin-left: 10px;
+}
+.text-input{
+    width: 100%;
+}
+.admin-content .button-group{
+    width: 80%;
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.admin-content .button-group a:last-child{
+    font-size: 16px;
+    margin-left: 20px;
+    font-family: monospace;
+    padding-left: 2px;
+    padding-right: 0x;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    height: fit-content;
+    
+}
+.admin-content .button-group a:first-child{
+    font-size: 16px;
+    font-family: monospace;
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+}
+}

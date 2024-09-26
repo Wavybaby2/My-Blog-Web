@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin section -- Add post</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../admin.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1 class="logo-text">
+            <span>Wavy</span>Boy
+        </h1>
+    </div>
+    <i class="fa fa-bars menu-toggle"></i>
+    <ul class="nav">
+       
+        <li>
+            <a href="#">
+                <i class="fa fa-user"></i>
+                
+                Wavy Boy
+                <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>
+            </a>
+            <ul>
+        <li><a href="../../index.html" class="logout">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+  </header> 
+  
+ <div class="admin-wrapper">
+<div class="left-sidebar">
+<ul>
+    <li><a href="index.html">Manage Posts</a></li>
+    <li><a href="../users/index.html">Manage Users</a></li>
+    <li><a href="../topics/index.html">Manage Topics</a></li>
+</ul>
+</div>
+<div class="admin-content">
+    <div class="button-group">
+        <a href="create.html" class="btn btn-big">Add Post</a>
+        <a href="index.html" class="btn btn-big">Manage Post</a>
+    </div>
+
+    <div class="content">
+        <h2 class="page-title">Manage Post</h2>
+
+        <form action="create.html" method="post">
+            <div>
+                <label>Title</label>
+                <input type="text" name="title" class="text-input">
+            </div>
+            <div>
+                <label>Body</label>
+                <textarea name="body" id="body" class="text-input"></textarea>
+            </div>
+            <div>
+                <label>Image</label>
+                <input type="file" name="image" class="text-input">
+            </div>
+            <div>
+                <label>Topic</label>
+                <select name="topic" class="text-input">
+                    <option value="Poetry">Poetry</option>
+                    <option value="Life Lessons">Life Lessons</option>
+                    <option value="Motivation">Motivation</option>
+                    <option value="Education">Education</option>
+                </select>
+            </div>
+            <div>
+               <button type="submit" class="btn btn-big">Add Post</button>
+            </div>
+        </form>
+    </div>
+</div>
+ </div>
+<script src="../../script.js"></script>
+</body>
+</html>

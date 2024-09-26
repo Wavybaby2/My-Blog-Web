@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="entertainment.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1 class="logo-text">
+            <span>Wavy</span>Boy
+        </h1>
+    </div>
+    <i class="fa fa-bars menu-toggle"></i>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="register.html">Services</a></li>
+        <!--<li><a href="#">Sign Up</a></li>-->
+        <!--<li></li><a href="#">Login</a></li>-->
+        <li>
+            <a href="#">
+                <i class="fa fa-user"></i>
+                
+                Wavy Boy
+                <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>
+            </a>
+            <ul>
+                <li><a href="admin/posts/index.html">Dashboard</a></li>
+        <li><a href="#" class="logout">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+
+  </header> 
+  <div class="overall">
+  <div class="all">
+    <div class="welcome" style="text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+    padding: 0px;
+    border-top: 3px solid gray;
+    border-bottom: 1px solid gray;
+    ">
+        <h1 class="first" style="margin-top: 15px;
+        margin-bottom: 0px;">WELCOME</h1>
+      </div>
+      <div class="clead">
+    <div class="current-day">
+  <div style="display: flex;
+  justify-content: center;
+  margin-top: 29px;">
+  <label style="font-size: 1.5em;">Current Day:</label>
+  
+    <div id="date" style="font-size: 1.5em;">Mar 28 2024</div>
+</div>
+  </div>
+    
+  <div class="current-day">
+    <div style="display: flex;
+    justify-content: center;
+    margin-top: 29px;">
+    <label style="font-size: 1.5em;">UTC Time- </label>
+    
+      <div  id="clock" id="date" style="font-size: 1.5em;">00:00:00</div>
+  </div>
+    </div>
+</div>
+    <div style="text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0px;
+    color: black;">
+     
+        <h2> <button style=" color: black;">PLAY GAMES</button></h2>
+    </div>
+  <div >
+    <label style="margin-top: 20px;"></label>
+    <div  ></div>
+</div>
+
+
+<div id="roller">
+
+<button id="myButton">roll</button> <br>   <br>&nbsp;
+<p><label for="" id="label1" class="myLabels"></label><br></p>
+
+<label for="" id="label2" class="myLabels"></label><br>
+<label for="" id="label3" class="myLabels"></label>
+</div>
+
+<form action="">
+    <h1>Temperature Conversion</h1>
+    <input type="number" name="" id="textBox" value="0"><br>
+
+    <input type="radio" id="toFahrenheit" name="unit">
+    <label for="toFahrenheit">Celsius ➡ Fahrenheit'</label><br>
+
+    <input type="radio" id="toCelsius" name="unit">
+    <label for="toCelsius">Fahrenheit ➡ Celsius'</label><br>
+
+    <button type="button" onclick="convert()">Submit</button>
+    <p id="result "></Select></p>
+</form>
+
+<div id="container">
+    <h1>Dice Roller</h1>
+
+    <label for=""># of Dice</label>
+    <input id="numOfDice" type="number" value="1" min="1">
+    <button onclick="rollDice()">Roll Dice</button>
+    <div id="diceResult"></div>
+    <div id="diceImages"></div>
+</div>
+
+</div>
+
+<div class="sidebar single" style="
+height: 100%;
+flex: 2;
+padding: 0px;
+display: block">
+    <div class="section popular" style="height: 100%;
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 0px;">
+        <h2>
+            Trending Post
+        </h2>
+        <div class="post clearfix">
+            <img src="images/images.jpg" alt="">
+            <a href="" class="title">How to overcome your fears</a>
+        </div>
+
+        <div class="post">
+            <img src="images/download (9).jpg" alt="">
+            <a href="" class="title">These Tips Will Make You Fall In Love.</a>
+        </div>
+
+        <div class="post">
+            <img src="images/download (6).jpg" alt="">
+            <a href="" class="title">The Best Advice You Can Hear About.</a>
+        </div>
+
+        <div class="post">
+            <img src="images/download (7).jpg" alt="">
+            <a href="" class="title">. How to Solve the Biggest Problems in.tr</a>
+        </div>
+
+        <div class="post">
+            <img src="images/download (2).jpg" alt="">
+            <a href="" class="title">How to overcome your fears</a>
+        </div>
+    </div>
+<div class="section topics" style="margin-left: 10px;
+height: 100%;
+margin-right: 2px;
+width: 100%;
+margin-top: 50px;
+margin-bottom: 0px;">
+    <h2 class="section-title">Topics</h2>
+    <ul>
+        <li><a href="#">Poem</a></li>
+        <li><a href="#">Fiction</a></li>
+        <li><a href="#">Biography</a></li>
+        <li><a href="#">Quotes</a></li>
+        <li><a href="#">Motivation</a></li>
+        <li><a href="#">Life Lessons</a></li>
+        <li><a href="#">Inspiration</a></li>
+    </ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="footer">
+  <div class="footer-content">
+      <div class="footer-section about">
+          <h1 class="logo-text"><span>Wavy</span>Boy</h1>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quaerat, vero voluptatibus atque non assumenda tenetur fugiat fugit veritatis corrupti nisi.
+               Odio unde nisi est consectetur pariatur quas eos delectus.
+          </p>
+
+          <div class="contact">
+              <span><i class="fa fa-phone"></i>&nbsp; 09157829551</span>
+              <span><i class="fa fa-envelope"></i>&nbsp; adewaleadeniran377@gmail.com</span>
+          </div>
+          <div class="socials">
+              <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook facebook"></i></a>
+              <a href="https://www.instagram.com" class="instagram"><i class="fab fa-instagram instagram"></i></a>
+              <a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter twitter"></i></a>
+              <a href="https://www.tiktok.com/" class="tiktok"><i class="fab fa-tiktok tiktok"></i></a>
+          </div>
+      </div>
+      <div class="footer-section links">
+          <h2>Quick Links</h2><br>
+          <ul>
+              <a href="https://www.eventbrite.com"><li>Events</li></a>
+              <a href="https://www.flickr.com/photos"><li>Gallery</li></a>
+              <a href="https://mentorcruise.com/"><li>Mentors</li></a>
+              <a href="https://policies.google.com/terms"><li>Terms & Condition</li></a>
+              <a href="https://teams.microsoft.com/"><li>Team</li></a>
+              <a href="https://www.chegg.com/tutors/"><li>Tutor</li></a>
+          </ul>
+      </div>
+      <div class="footer-section contact-form">
+          <h2>Contact User</h2><br>
+          <form action="index.html" method="post">
+              <input type="email" name="email" class="tex-input contact-input" placeholder="Your email adress...">
+              <textarea name="message" class="tex-input contact-input" placeholder="your message"></textarea>
+      
+             
+              
+             
+
+          </button>
+          
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      &copy; WavyBoy | Design by Adeniran Qoyum
+  </div>
+</div>
+<script src="entertainment.js"></script>
+</body>
+</html>

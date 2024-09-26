@@ -1,0 +1,271 @@
+
+.overall{
+    display: flex;
+}
+
+.all{
+    flex: 8;
+    justify-content: right;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    background: white;
+    scroll-behavior: smooth;
+}
+
+
+#clock-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bold;
+    
+  
+}
+
+.clead{
+   background-color:  rgb(9, 94, 54);
+    padding: 15px 0px 40px 0px;
+    margin-top: 40px;
+    width: 60%;
+    border-radius: 15px;
+     margin-right: 7px;
+     margin-left: 200px;
+}
+
+#roller{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#myButton{
+    font-size: 2.5em;
+    padding: 2px 25px;
+    border-radius: 5px;
+}
+#roll-result{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.myLabels {
+    font-size: 3em;
+}
+
+h1{
+    color: hsl(247, 86%, 44%);
+}
+
+form{
+    background-color: white;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px hsl(0, 0%, 0.3%);
+}
+
+#textBox{
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid hsl(0, 0%, 0.8%);
+    border-radius: 4px;
+    margin-bottom: 15PX;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 15px;
+    background-color: hsl(0, 100%, 60%);
+    font-size: 1.5em;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+button:hover{
+    background-color: hsl(0, 10%, 52%);
+}
+
+#result{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+#container{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 10px, 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(210, 100%, 50%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(210, 100%, 60%);
+}
+
+button:active{
+    background-color: hsl(210, 100%, 70%);
+}
+
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#diceResult{
+    margin: 25px;
+}
+
+#diceImages img{
+    width: 150px;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 500px){
+    .overall{
+        display: block;
+        width: 100%;
+    }
+    .all{
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+    .current-day{
+        width: 100%;
+        font-size: 10px;
+    }
+    #clock-container{
+        font-size: 20px;
+        flex: 1;
+        flex-direction: row;
+    }
+    #clock{
+        font-size: inherit;
+    }
+    .clead{
+        width: 10%;
+       margin-left: 0px;
+       font-size: 1.5rem;
+       padding-top: 5px;
+       padding-bottom: 20px;
+       margin-right: 60px;
+    }
+    .current-day{
+        width: 20%;
+        font-size: 2rem;
+        padding: 0px;
+    }
+    .welcome{
+        width: 100%;
+    }
+    .first{
+        font-size: 3.5rem;
+    }
+    .sidebar.single{
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        
+    }
+    .sidebar{
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+    .overall{
+        display: block;
+        width: 100%;
+    }
+    .all{
+        width: 100%;
+        justify-content: center;
+    }
+    .current-day{
+        width: 100%;
+        font-size: 10px;
+    }
+    #clock-container{
+        font-size: 20px;
+        flex: 1;
+        flex-direction: row;
+    }
+    #clock{
+        font-size: inherit;
+    }
+    .clead{
+        width: 100%;
+        float: left;
+    }
+    .welcome{
+        width: 100%;
+    }
+    .first{
+        font-size: 3.5rem;
+    }
+    .clead{
+        width: 50%;
+       margin-right: 80px;
+       
+    }
+
+}
+
+@media only screen and (max-width: 950px){
+    .overall{
+        display: block;
+        width: 100%;
+    }
+    .all{
+        width: 100%;
+        justify-content: center;
+    }
+    .current-day{
+        width: 100%;
+        font-size: 10px;
+    }
+    #clock-container{
+        font-size: 20px;
+        flex: 1;
+        flex-direction: row;
+    }
+    #clock{
+        font-size: inherit;
+    }
+    .clead{
+        width: 100%;
+        float: left;
+    }
+    .welcome{
+        width: 100%;
+    }
+    .first{
+        font-size: 3.5rem;
+    }
+
+}
